@@ -22,6 +22,11 @@
             key-positions = <36 29>;
             layers = <2>;
         };
+
+        RightControlCombo {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <33 34>;
+        };
     };
 
     keymap {
