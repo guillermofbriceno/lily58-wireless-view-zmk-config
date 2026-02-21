@@ -21,6 +21,11 @@
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <33 34>;
         };
+
+        CapsLockCombo {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <25 26>;
+        };
     };
 
     keymap {
@@ -60,7 +65,7 @@
 &kp GRAVE         &kp F1        &kp F2        &kp F3         &kp F4        &kp F5                                 &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
 &kp LEFT_CONTROL  &trans        &trans        &kp PAGE_DOWN  &kp PAGE_UP   &kp HOME                               &trans   &trans   &trans   &trans            &trans             &trans
 &kp LEFT_SHIFT    &trans        &trans        &trans         &trans        &kp END       &soft_off    &bt BT_CLR  &trans   &trans   &trans   &trans            &trans             &trans
-                                              &kp LGUI       &kp LALT      &trans        &trans       &kp SPACE   &trans   &trans   &trans
+                                              &kp LGUI       &kp LALT      &trans        &kp SPACE    &kp SPACE   &trans   &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -76,11 +81,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans            &trans  &trans  &trans        &trans        &trans                       &trans    &trans          &trans        &trans           &trans          &kp DEL
-&trans            &trans  &trans  &trans        &trans        &trans                       &trans    &trans          &trans        &trans           &trans          &kp PAGE_UP
-&kp LEFT_CONTROL  &trans  &trans  &trans        &trans        &trans                       &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SCROLLLOCK  &kp PAGE_DOWN
-&kp LEFT_SHIFT    &trans  &trans  &trans        &trans        &trans  &trans    &trans     &trans    &trans          &kp HOME      &trans           &trans          &kp END
-                                  &kp LEFT_GUI  &kp LEFT_ALT  &trans  &trans    &kp SPACE  &trans    &trans          &trans
+&trans            &trans  &trans  &trans        &trans        &trans                          &trans    &trans          &trans        &trans           &trans          &kp DEL
+&trans            &trans  &trans  &trans        &trans        &trans                          &trans    &trans          &trans        &trans           &trans          &kp PAGE_UP
+&kp LEFT_CONTROL  &trans  &trans  &trans        &trans        &trans                          &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SCROLLLOCK  &kp PAGE_DOWN
+&kp LEFT_SHIFT    &trans  &trans  &trans        &trans        &trans  &trans       &trans     &trans    &trans          &kp HOME      &trans           &trans          &kp END
+                                  &kp LEFT_GUI  &kp LEFT_ALT  &trans  &kp SPACE    &kp SPACE  &trans    &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
