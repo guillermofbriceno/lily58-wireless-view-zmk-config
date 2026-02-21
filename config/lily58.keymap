@@ -23,7 +23,7 @@
         };
 
         CapsLockCombo {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&caps_word>;
             key-positions = <25 26>;
         };
     };
